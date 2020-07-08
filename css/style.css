@@ -234,7 +234,7 @@ header{
 }
 
 .perfil .perfil-box2{
-    padding-top: 60%;
+    padding-top: 55%;
     position: relative;
 }
 
@@ -274,7 +274,7 @@ header{
 /* VIDEO */
 
 .video{
-    padding: 50px 0;
+    padding-bottom: 50px;
 }
 
 .video .box-video{
@@ -708,6 +708,7 @@ footer .block p{
 
     .video{
         text-align: center;
+        padding: 50px 0;
     }
     
     .video .box-video{
@@ -749,6 +750,10 @@ footer .block p{
         padding-top: 100%;
         display: inline-block;
         height: auto;
+    }
+
+    .perfil .texto-perfil{
+        text-align: left;
     }
 
     /* VIDEO */
