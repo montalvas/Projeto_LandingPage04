@@ -15,7 +15,7 @@ html, body{
 }
 
 .container{
-    width: 1280px;
+    width: 1400px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -94,16 +94,87 @@ header{
 .img-mosaic-single{
     width: 100%;
     padding-top: 100%;
-    background-color: #ccc;
-    /*background-image: url();*/
+    background-color: white;
     border: 5px solid white;
+}
+
+.mosaic-single:nth-of-type(1) .img-mosaic-single:nth-of-type(1){
+    background-image: url(../img/1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mosaic-single:nth-of-type(1) .img-mosaic-single:nth-of-type(2){
+    background-image: url(../img/2.jpg);
+    background-size: cover;
+}
+
+.mosaic-single:nth-of-type(2) .img-mosaic-single:nth-of-type(1){
+    background-image: url(../img/3.jpg);
+    background-size: 100% 100%;
+}
+
+.mosaic-single:nth-of-type(2) .img-mosaic-single:nth-of-type(2){
+    background-image: url(../img/4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mosaic-single:nth-of-type(3) .img-mosaic-single:nth-of-type(1){
+    background-image: url(../img/5.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mosaic-single:nth-of-type(3) .img-mosaic-single:nth-of-type(2){
+    background-image: url(../img/6.jpg);
+    background-size: cover;
+}
+
+.mosaic-single:nth-of-type(4) .img-mosaic-single:nth-of-type(1){
+    background-image: url(../img/7.jpg);
+    background-size: cover;
+}
+
+.mosaic-single:nth-of-type(4) .img-mosaic-single:nth-of-type(2){
+    background-image: url(../img/8.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mosaic-single:nth-of-type(5) .img-mosaic-single:nth-of-type(1){
+    background-image: url(../img/9.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mosaic-single:nth-of-type(5) .img-mosaic-single:nth-of-type(2){
+    background-image: url(../img/10.jpg);
+    background-size: cover;
+}
+
+.mosaic-single:nth-of-type(6) .img-mosaic-single:nth-of-type(1){
+    background-image: url(../img/11.jpg);
+    background-size: cover;
+}
+
+.mosaic-single:nth-of-type(6) .img-mosaic-single:nth-of-type(2){
+    background-image: url(../img/12.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* SERVICES */
 
 .services > .container{
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     display: flex;
     text-align: center;
     align-items: center;
@@ -126,7 +197,7 @@ header{
 
 .services > .container > .box-service:nth-of-type(2){
     width: 40%;
-    padding: 45px 2%;
+    padding: 45px 6%;
     background-color: #688293;
     background-image: none;
 }
@@ -159,7 +230,7 @@ header{
 
 .perfil .container{
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 .perfil .perfil-box2{
@@ -174,12 +245,11 @@ header{
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
 }
 
 .perfil .img-perfil{
     width: 40%;
-    height: 100%;
+    height: 80%;
     background-image: url(../img/img_perfil.png);
     background-size: 100% 100%;
 }
@@ -192,11 +262,12 @@ header{
 .perfil .texto-perfil h2{
     font-size: 18px;
     color: #698293;
+    margin-bottom: 22px;
 }
 
 .perfil .texto-perfil p{
     margin-top: 8px;
-    color: #4b4b4b;
+    color: #BDBDBD;
     font-size: 14px;
 }
 
@@ -236,6 +307,7 @@ header{
 
 .tratamentos .container{
     padding: 50px 0;
+    overflow-x: hidden;
 }
 
 .tratamentos-wraper{
@@ -496,6 +568,53 @@ header{
     font-size: 14px;
     text-transform: uppercase;
     border: 0;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 60px 0;
+    text-align: center;
+    background-color: #688293;
+}
+
+footer .container{
+    width: 100%;
+    max-width: 900px;
+}
+
+footer .block{
+    float: left;
+    width: 33.3%;
+    color: white;
+}
+
+footer .block h2{
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+footer .block p{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.montalvas{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #576975;
+}
+
+.logo-montalvas{
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    background-image: url(../img/Logo-montalvas.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
@@ -505,7 +624,7 @@ header{
 /* RESPONSIVIDADE */
 
 @media screen and (max-width: 1024px){
-
+    
     /* SOCIAL */
 
     .img-mosaico-social{
@@ -535,6 +654,7 @@ header{
 
     .services > .container{
         flex-direction: column;
+        top: -10px;
     }
 
     .services > .container > .box-service:nth-of-type(1){
@@ -568,7 +688,7 @@ header{
 
     .perfil .img-perfil{
         width: 50%;
-        padding-top: 70%;
+        padding-top: 60%;
         display: inline-block;
         height: auto;
     }
@@ -577,6 +697,11 @@ header{
         display: inline-block;
         width: 100%;
         text-align: justify;
+    }
+
+    .perfil .texto-perfil h2{
+        text-align: center;
+        margin-top: 20px;
     }
 
     /* VIDEO */
@@ -604,7 +729,14 @@ header{
     .img-mosaico-social:nth-of-type(1n + 4){
         display: none;
     }
-    
+
+    /* FOOTER */
+
+    footer .block{
+        float: none;
+        width: 100%;
+        padding: 20px 0;
+    }   
 }
 
 
@@ -624,6 +756,26 @@ header{
     .video .box-video{
         width: 90%;
         padding-top: calc(90% * 0.6);
+    }
+
+    /* DEPOIMENTOS */
+
+    .depoimentos .container{
+        max-width: none;
+        width: 90%;
+        margin: 0 auto;
+        padding: 60px 2%;
+    }
+
+    /* CONTATO */
+
+    .contato{
+        padding: 80px 2%;
+        text-align: center;
+    }
+    
+    .contato .container{
+        width: 100%;
     }
     
 }
